@@ -1,2 +1,2 @@
-from eventsource import eventsource
+from eventsource import ContentTypeError, eventsource
 
