@@ -13,6 +13,9 @@ Example
 
 ::
 
+    import requests
+    from requests_eventsource import eventsource
+
     r = requests.get('http://example.com/ev', stream=True)
     for event in eventsource(r):
         if event.type == 'rpc':
