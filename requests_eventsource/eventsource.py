@@ -1,5 +1,3 @@
-import requests
-import json
 from eventsource_parser import Event, parse
 
 
