@@ -1,8 +1,12 @@
 Requests EventSource
 =====================
 
-requests-eventsource is an eventsource implementation on top of
-requests and eventsource-parser.
+requests-eventsource is an EventSource_ implementation on top of
+Requests_ and eventsource-parser_.
+
+.. _EventSource: http://www.w3.org/TR/eventsource/
+.. _Requests: http://docs.python-requests.org/
+.. _eventsource-parser: https://github.com/tOkeshu/eventsource-parser
 
 License
 -------
