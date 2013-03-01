@@ -8,6 +8,19 @@ Requests_ and eventsource-parser_.
 .. _Requests: http://docs.python-requests.org/
 .. _eventsource-parser: https://github.com/tOkeshu/eventsource-parser
 
+Example
+-------
+
+::
+
+    r = requests.get('http://example.com/ev', stream=True)
+    for event in eventsource(r):
+        if event.type == 'rpc':
+            do_something(event)
+        if event.type == 'json':
+            print(json.loads(event.data))
+
+
 License
 -------
 
