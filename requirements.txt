@@ -1,0 +1,1 @@
+-e git://github.com/tOkeshu/eventsource-parser.git#egg=eventsource_parser
