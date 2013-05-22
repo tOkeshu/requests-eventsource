@@ -5,7 +5,7 @@ class ContentTypeError(Exception):
     pass
 
 def eventsource(response):
-    if response.headers['Content-Type'] != 'text/event-stream':
+    if 'text/event-stream' not in response.headers['Content-Type']:
         message = 'Bad Content-Type, found "%s" instead of "text/event-stream"'
         raise ContentTypeError(message % response.headers['Content-Type'])
 
